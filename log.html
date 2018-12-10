@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu {
+  background: blue;
+  color: red;
+  height: 35px;
+  border-bottom: 4px solid #eeeded
+}
+
+#menu ul,
+#menu li {
+  margin: 0 0;
+  padding: 0 0;
+  list-style: none
+}
+
+#menu ul {
+  height: 35px
+}
+
+#menu li {
+  float: left;
+  display: inline;
+  position: relative;
+  font: bold 12px Arial;
+  text-shadow: 0 -1px 0 #000;
+  border-right: 1px solid #444;
+  border-left: 1px solid #111;
+  text-transform: uppercase
+}
+
+#menu li:first-child {
+  border-left: none
+}
+
+#menu a {
+  display: block;
+  line-height: 35px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: #eee;
+}
+
+#menu li:hover > a,
+#menu li a:hover {
+  background: #111
+}
+
+#menu input {
+  display: none;
+  margin: 0 0;
+  padding: 0 0;
+  width: 80px;
+  height: 35px;
+  opacity: 0;
+  cursor: pointer
+}
+
+#menu label {
+  font: bold 30px Arial;
+  display: none;
+  width: 35px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center
+}
+
+#menu label span {
+  font-size: 12px;
+  position: absolute;
+  left: 35px
+}
+
+#menu ul.menus {
+  height: auto;
+  width: 180px;
+  background: #111;
+  position: absolute;
+  z-index: 99;
+  display: none;
+  border: 0;
+}
+
+#menu ul.menus li {
+  display: block;
+  width: 100%;
+  font: 12px Arial;
+  text-transform: none;
+}
+
+#menu li:hover ul.menus {
+  display: block
+}
+
+#menu a.home {
+  background: #c00;
+}
+
+#menu a.prett {
+  padding: 0 27px 0 14px
+}
+
+#menu a.prett::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 6px 5px;
+  border-style: solid;
+  border-color: #eee transparent transparent transparent;
+  position: absolute;
+  top: 15px;
+  right: 9px
+}
+
+#menu ul.menus a:hover {
+  background: #333;
+}
+
+#menu ul.menus .submenu {
+  display: none;
+  position: absolute;
+  left: 180px;
+  background: #111;
+  top: 0;
+  width: 180px;
+}
+
+#menu ul.menus .submenu li {
+  background: #111;
+}
+
+#menu ul.menus .has-submenu:hover .submenu {
+  display: block;
+}
+/*img and text*/
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.top {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	marquee:leftwards
+	}
+.s
+{
+color:red;	
+}
+.button 
+{
+ background-color: pink;
+    border: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10p;
+	border-radius: 50%;
+	top:55%;
+	
+}	
+	
+}
+
+</style>
+ <script>
+
+function log()
+{
+var a=document.getElementById("p").value;
+var b=document.getElementById("q").value;
+var c=document.getElementById("r").value;
+var d=document.getElementById("s").value;
+c.value=a.value;
+d.value=b.value;
+</script>
+</head>
+<body>
+<div style="padding-right:16px" class="container">
+<img src="s.jpg" width="1500"></img>
+
+<h2 class="top">
+<p class="s">tourists login.........</p> 
+<label>username</label>
+<input type="text" id="p" value=""/><br>
+<label>password</label>
+<input type="text" id="q" value=""/><br><br>
+<div style="padding-right:16px" class="container">
+<button class="button"     onclick="log()" >login</button><br>
+<img src="s.jpg" width="1500"></img>
+<input type="text" id="p" value=""/><br>
+<label>password</label>
+<input type="text" id="q" value=""/><br><br>
+<div style="padding-right:16px" class="container">
+<img src="s.jpg" width="1500"></img> 
+<label>username</label>
+<input type="text" id="r" value=""/><br>
+<label>password</label>
+<input type="text" id="s" value=""/><br><br>
+<button class="button"     onclick="log()" >login</button><br>
+</h2>
+</div>
+
+</body>
+</html>
+
